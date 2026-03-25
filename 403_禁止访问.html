@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>错误请求</title>
+    <title>禁止访问</title>
     <style>
       * {
         margin: 0;
@@ -12,7 +12,7 @@
       }
       body {
         font-family: "Microsoft YaHei", "PingFang SC", "Helvetica Neue", Arial, sans-serif;
-        background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+        background: linear-gradient(135deg, #38a169 0%, #276749 100%);
         min-height: 100vh;
         display: flex;
         align-items: center;
@@ -37,7 +37,7 @@
         width: 80px;
         height: 80px;
         margin: 0 auto 30px;
-        background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+        background: linear-gradient(135deg, #38a169 0%, #276749 100%);
         border-radius: 50%;
         display: flex;
         align-items: center;
@@ -67,7 +67,7 @@
         margin-bottom: 30px;
       }
       .alert-type {
-        background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+        background: linear-gradient(135deg, #38a169 0%, #276749 100%);
         color: white;
         padding: 15px 25px;
         border-radius: 10px;
@@ -75,11 +75,11 @@
         font-weight: 600;
         margin-bottom: 25px;
         display: inline-block;
-        box-shadow: 0 4px 15px rgba(44, 82, 130, 0.4);
+        box-shadow: 0 4px 15px rgba(39, 103, 73, 0.4);
       }
       .details {
-        background: #ebf8ff;
-        border-left: 4px solid #3182ce;
+        background: #f0fff4;
+        border-left: 4px solid #38a169;
         padding: 20px;
         margin-top: 25px;
         text-align: left;
@@ -99,7 +99,7 @@
       }
       .btn {
         display: inline-block;
-        background: linear-gradient(135deg, #3182ce 0%, #2c5282 100%);
+        background: linear-gradient(135deg, #38a169 0%, #276749 100%);
         color: white;
         padding: 12px 30px;
         border-radius: 10px;
@@ -108,11 +108,11 @@
         text-decoration: none;
         margin-top: 20px;
         transition: all 0.3s ease;
-        box-shadow: 0 4px 15px rgba(44, 82, 130, 0.4);
+        box-shadow: 0 4px 15px rgba(39, 103, 73, 0.4);
       }
       .btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(44, 82, 130, 0.6);
+        box-shadow: 0 6px 20px rgba(39, 103, 73, 0.6);
       }
     </style>
   </head>
@@ -120,17 +120,17 @@
     <div class="container">
       <div class="icon">
         <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z"/>
         </svg>
       </div>
-      <h1>错误请求</h1>
-      <div class="alert-type">400 Bad Request</div>
-      <div class="message">抱歉，服务器无法理解您的请求，请检查请求参数是否正确。</div>
+      <h1>禁止访问</h1>
+      <div class="alert-type">403 Forbidden</div>
+      <div class="message">抱歉，您没有权限访问此资源。</div>
       <div class="details">
         <h3>可能的原因</h3>
-        <p>• 请求参数格式错误</p>
-        <p>• URL 语法错误</p>
-        <p>• 请求体数据格式不正确</p>
+        <p>• 您的账户权限不足</p>
+        <p>• 资源被管理员限制访问</p>
+        <p>• IP 地址被限制</p>
       </div>
       <a href="/" class="btn">返回首页</a>
     </div>
